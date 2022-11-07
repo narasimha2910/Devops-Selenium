@@ -1,0 +1,15 @@
+from unittest import TestCase, main
+from selenium import webdriver
+
+class DemoTestCase(TestCase):
+
+    def setUp(self):
+        self.browser = webdriver.Chrome()
+        self.addCleanup(self.browser.quit)
+
+    def test_page_title(self):
+        self.browser.get('http://www.google.com')
+        self.assertIn('Google', self.browser.title)
+
+if __name__ == '__main__':
+    main(verbosity=2)
