@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AppTest 
 { 
 	public WebDriver driver; 
-	public String baseUrl = "https://www.lambdatest.com/";  
+	public String baseUrl = "https://www.lambdatest.in/";  
 	
 	@Test             
 	public void test1() {      
