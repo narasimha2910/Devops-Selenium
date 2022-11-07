@@ -27,7 +27,7 @@ public class AppTest
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
 		driver.manage().window().maximize();
-		String expectedTitle = "Google";
+		String expectedTitle = "Googles";
 		Assert.assertEquals("Condition true", actualTitle, expectedTitle);
 		driver.close();
 	}     
