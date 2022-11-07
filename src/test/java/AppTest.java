@@ -22,7 +22,7 @@ public class AppTest
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		String actualTitle = driver.getTitle();
-		System.out.println(actualTitle)
+		System.out.println(actualTitle);
 		driver.manage().window().maximize();
 		String expectedTitle = "Google";
 		Assert.assertEquals("Condition true", actualTitle, expectedTitle);
